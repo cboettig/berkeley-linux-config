@@ -1,5 +1,26 @@
 ## Configuring the VPN
 
+### Ubuntu / network-manager
+
+I find the most convenient way to configure the VPN is using Ubuntu's built-in default tool for handling network and wireless connections: Network Manager.  First, we need to install the correct VPN tool for Network Manger to use: the `openconnect` plugin.
+
+
+```bash
+sudo apt-get intall -y network-manager-openconnect-gnome
+```
+
+Now, from the Network Manager app select `VPN Connections` -> `Configure VPN ...`. Click `Add`, 
+select type from the dropdown list as `Cisco AnyConnect Compatible VPN (anyconnect)` from the dropdown list.  
+
+Give the connection a name (e.g. Berkeley) and enter `ucbvpn.berkeley.edu` as the Gateway, leave the remaining settings as they are and click save.  
+
+From the Network Manager app, again select `VPN Connections` and then select the name of the connection you just created.  It should open a dialog asking for you to select a group from a dropdown menu, a name, and a password. Select the appropriate group (e.g. `3-Library_VPN`) and log in using your CalNet ID. 
+
+You should now be connected to the VPN and can access subscription journal content, etc.
+
+
+### Command-line version
+
 Adapted from [Rachel Domagalski](http://w.astro.berkeley.edu/~domagalski/linux/vpn.html)
 
 The campus VPN service can be used to gain access to the UC Berkeley network
@@ -46,7 +67,7 @@ desktop environments). I have not attempted to test this, as I do not use
 NetworkManager. Alternatively, one is free to attempt to use the official Cisco
 client at their own risk (not recommended).
 
-## Basic Usage Instructions:
+#### Basic Usage Instructions:
 
 <ol>
     <li>Install the openconnect software from your package manager. On
@@ -70,21 +91,3 @@ client at their own risk (not recommended).
     combination of Ctrl-C in the terminal window used to launch
     openconnect.</li>
 </ol>
-
-## Configuring Network Manager
-
-**not working for me at this time. Error: cannot connect to VPN**
-
-In principle you should be able to configure Network Manager (default network manager in Ubuntu) 
-to automatically connect over VPN whenever you connect to a specified internet connection (e.g. 
-wireless access point or ethernet connection).  
-
-Install `network-manager-vpnc`:
-
-```bash
-sudo apt-get intall -y network-manager-vpnc
-```
-
-From the Network Manager app select `VPN Connections` -> `Configure VPN ...`. Click `Add`, 
-select type from the dropdown list as `Cisco Compatible VPN (vpnc)` from the dropdown list,
-and add the credentials and Group as above.  For Group password, select "password not required"(?). 
