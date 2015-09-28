@@ -6,7 +6,7 @@ I find the most convenient way to configure the VPN is using Ubuntu's built-in d
 
 
 ```bash
-sudo apt-get intall -y network-manager-openconnect-gnome
+sudo apt-get install -y network-manager-openconnect-gnome
 ```
 
 Now, from the Network Manager app select `VPN Connections` -> `Configure VPN ...`. Click `Add`, 
