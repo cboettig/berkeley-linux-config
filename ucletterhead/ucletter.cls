@@ -264,7 +264,7 @@
     }
     {}
     \ifthenelse{\equal{\ucl@fromaddr}{date}}{}{
-      \ifthenelse{\equal{\fromname}{}}{}{\fromname, PhD Student\\}
+      \ifthenelse{\equal{\fromname}{}}{}{\fromname\\}
       \ifthenelse{\equal{\ucl@telephone}{}}{}{{\sc Phone:} \ucl@telephone\\}
       \ifthenelse{\equal{\ucl@fax}{}}{}{{\sc Fax:} \ucl@fax\\}
       \ifthenelse{\equal{\ucl@email}{}}{}{{\sc Email:} \ucl@email\\}
