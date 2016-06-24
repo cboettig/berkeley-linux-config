@@ -1,0 +1,19 @@
+---
+name: Carl Boettiger
+email: cboettig@berkeley.edu 
+address: "Address of recipient"
+opening: "To whom it may concern:"
+closing: "Sincerely,"
+campus: ucb
+dept: espm
+fontsize: 11pt
+
+## Leave this as is, make sure template.tex is in working directory
+output: 
+  pdf_document:
+    template: template.tex
+    
+## NB: Add an image of your signature called 'signature.png'    
+---
+
+
