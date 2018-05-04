@@ -14,8 +14,8 @@
   
 ## Connecting to `eduroam`
 
-In principle, the same connection settings should work on `eduroam` (found across many academic campuses), with 
-the only modification being the use of `@berkeley.edu` after the CalNet ID.  **However, this is not working for me at this time**
+The same connection settings should work on `eduroam` (found across many academic campuses), with 
+the only modification being the use of `@berkeley.edu` after the CalNet ID. 
 
 ----
 
