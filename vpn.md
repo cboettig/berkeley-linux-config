@@ -2,7 +2,7 @@
 
 ### Ubuntu / network-manager
 
-I find the most convenient way to configure the VPN is using Ubuntu's built-in default tool for handling network and wireless connections: Network Manager.  First, we need to install the correct VPN tool for Network Manger to use: the `openconnect` plugin.
+I find the most convenient way to configure the VPN is using Ubuntu's built-in default tool for handling network and wireless connections: Network Manager.  First, we need to install the correct VPN tool for Network Manager to use: the `openconnect` plugin.
 
 
 ```bash
