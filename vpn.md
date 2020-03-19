@@ -12,5 +12,7 @@ On Ubuntu 19.10, I:
 - `tar xvf PanGPLinux-5.1.2-c3.tgz`
 - `sudo dpkg -i GlobalProtect_UI_deb-5.1.2.0-3.deb`
 
-Then enter <vpn.berkeley.edu> as the connection in the box that pops up.  Log in with CalNet credentials + Duo 2FA.  
+Then enter <vpn.berkeley.edu> as the connection in the box that pops up.  Log in with CalNet credentials + Duo 2FA.
+
+From the dropdown in the GUI, choose Library tunnel to be able to access PDF articles directly from browser (split tunnel doesn't do this). 
 
